@@ -612,3 +612,759 @@ Processing by SongsController#show as HTML
   [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 1]]
   Rendered songs/show.html.erb within layouts/application (14.2ms)
 Completed 200 OK in 46ms (Views: 21.2ms | ActiveRecord: 0.6ms)
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "The Killers"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Mr. Brightside"], ["created_at", "2020-03-08 16:52:15.307270"], ["updated_at", "2020-03-08 16:52:15.307270"], ["artist_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "The Killers"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Jenny Was a Friend of Mine"], ["created_at", "2020-03-08 16:52:15.310671"], ["updated_at", "2020-03-08 16:52:15.310671"], ["artist_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Tommy Tutone"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Jenny"], ["created_at", "2020-03-08 16:52:15.313325"], ["updated_at", "2020-03-08 16:52:15.313325"], ["artist_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Daft Punk"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Around the World"], ["created_at", "2020-03-08 16:52:15.315972"], ["updated_at", "2020-03-08 16:52:15.315972"], ["artist_id", 3]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Daft Punk"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Harder, Better, Faster, Stronger"], ["created_at", "2020-03-08 16:52:15.318548"], ["updated_at", "2020-03-08 16:52:15.318548"], ["artist_id", 3]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Pixies"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Where is My Mind?"], ["created_at", "2020-03-08 16:52:15.322019"], ["updated_at", "2020-03-08 16:52:15.322019"], ["artist_id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Pixies"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Gigantic"], ["created_at", "2020-03-08 16:52:15.325028"], ["updated_at", "2020-03-08 16:52:15.325028"], ["artist_id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Pixies"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Monkey Gone to Heaven"], ["created_at", "2020-03-08 16:52:15.327658"], ["updated_at", "2020-03-08 16:52:15.327658"], ["artist_id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/artists" for ::1 at 2020-03-08 10:27:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (21.1ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `songs' for #<Artist::ActiveRecord_Relation:0x00007fa59a55d100>):
+    2: <ul>
+    3:   <% @artists.each do |artist| %>
+    4:     <li><%= link_to artist.name, artist_path(artist) %></li>
+    5:       <% @artists.songs.each do |song| %>
+    6:         <li><%= link_to song, song_path(song) %></li>
+    7:         <% end %>
+    8:   <% end %>
+  
+app/views/artists/index.html.erb:5:in `block in _app_views_artists_index_html_erb__1889937233678224515_70174624480900'
+app/views/artists/index.html.erb:3:in `_app_views_artists_index_html_erb__1889937233678224515_70174624480900'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (36.0ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174623934300 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (80.7ms)
+Started GET "/artists" for ::1 at 2020-03-08 10:28:11 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (1.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 249ms (Views: 243.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-08 10:28:22 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/index.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Song:0x00007fa59fbf2010>):
+    3:   <% @artists.each do |artist| %>
+    4:     <li><%= link_to artist.name, artist_path(artist) %></li>
+    5:       <% artist.songs.each do |song| %>
+    6:         <li><%= link_to song.name, song_path(song) %></li>
+    7:         <% end %>
+    8:   <% end %>
+    9: </ul>
+  
+app/views/artists/index.html.erb:6:in `block (2 levels) in _app_views_artists_index_html_erb__1889937233678224515_70174663088800'
+app/views/artists/index.html.erb:5:in `block in _app_views_artists_index_html_erb__1889937233678224515_70174663088800'
+app/views/artists/index.html.erb:3:in `_app_views_artists_index_html_erb__1889937233678224515_70174663088800'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.1ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174664525120 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (67.9ms)
+Started GET "/artists" for ::1 at 2020-03-08 10:28:55 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 29ms (Views: 23.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-08 10:29:25 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-08 10:29:44 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:33:19 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:33:51 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs" for ::1 at 2020-03-08 10:38:15 -0700
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (111.3ms)
+Completed 200 OK in 125ms (Views: 116.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:44:33 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 22ms (Views: 14.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:44:36 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:45:28 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:45:29 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:46:22 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:46:25 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:47:46 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:47:48 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-08 10:50:10 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (1.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 37ms (Views: 30.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-08 10:51:28 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-08 10:52:33 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `songs' for #<Artist::ActiveRecord_Relation:0x00007fa59ed11988>):
+    1: <h1>Artists</h1>
+    2: <ul>
+    3:       <% @artists.songs.each do |song| %>
+    4:         <div><%= link_to song.artist_name, artist_songs_path(song.artist) %></div>
+    5:         <div><%= link_to song.title, song_path(song) %></div>
+    6:   <% end %>
+  
+app/views/artists/index.html.erb:3:in `_app_views_artists_index_html_erb__1889937233678224515_70174655415360'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174622530000 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (71.3ms)
+Started GET "/artists" for ::1 at 2020-03-08 10:54:01 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:54:03 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:54:52 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-08 10:56:27 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/1234" for ::1 at 2020-03-08 13:45:07 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1234"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1234], ["LIMIT", 1]]
+Completed 404 Not Found in 12ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=1234):
+  
+app/controllers/artists_controller.rb:7:in `show'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174664775200 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.7ms)
+Started GET "/artists/1234" for ::1 at 2020-03-08 13:48:21 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1234"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1234], ["LIMIT", 1]]
+Completed 404 Not Found in 16ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=1234):
+  
+app/controllers/artists_controller.rb:7:in `show'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174621727440 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.1ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.8ms)
+Started GET "/artists/1234" for ::1 at 2020-03-08 13:49:21 -0700
+  
+SyntaxError (/Users/melia/Development/code/routing-nested-resources-lab-online-web-ft-120919/app/controllers/artists_controller.rb:10: syntax error, unexpected else
+    else
+    ^~~~):
+  
+app/controllers/artists_controller.rb:10: syntax error, unexpected else
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174621129960 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.4ms)
+Started GET "/artists/1234" for ::1 at 2020-03-08 13:49:31 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1234"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1234], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=1234):
+  
+app/controllers/artists_controller.rb:8:in `show'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174624807860 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.4ms)
+Started GET "/artists/1234" for ::1 at 2020-03-08 13:51:19 -0700
+  
+SyntaxError (/Users/melia/Development/code/routing-nested-resources-lab-online-web-ft-120919/app/controllers/artists_controller.rb:7: syntax error, unexpected ')', expecting then or ';' or '\n'
+    if @artist = Artist.find)by(id: params[:id])
+                            ^
+/Users/melia/Development/code/routing-nested-resources-lab-online-web-ft-120919/app/controllers/artists_controller.rb:8: syntax error, unexpected ')', expecting end
+      @artist = Artist.find)by(id: params[:id])
+                           ^
+/Users/melia/Development/code/routing-nested-resources-lab-online-web-ft-120919/app/controllers/artists_controller.rb:9: else without rescue is useless
+    else
+    ^~~~
+/Users/melia/Development/code/routing-nested-resources-lab-online-web-ft-120919/app/controllers/artists_controller.rb:58: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/artists_controller.rb:7: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/controllers/artists_controller.rb:8: syntax error, unexpected ')', expecting end
+app/controllers/artists_controller.rb:9: else without rescue is useless
+app/controllers/artists_controller.rb:58: syntax error, unexpected end, expecting end-of-input
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174662382300 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+Started GET "/artists/1234" for ::1 at 2020-03-08 13:51:40 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1234"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1234], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+Redirected to 
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.3ms)
+
+
+  
+NoMethodError (undefined method `to_model' for #<Artist::ActiveRecord_Relation:0x00007fa59b2534b8>
+Did you mean?  to_xml):
+  
+app/controllers/artists_controller.rb:12:in `show'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.2ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174656631080 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.3ms)
+Started GET "/artists/1234" for ::1 at 2020-03-08 13:52:40 -0700
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1234"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1234], ["LIMIT", 1]]
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-08 13:52:41 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/songs/12" for ::1 at 2020-03-08 13:55:54 -0700
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 80ms (Views: 62.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/songs/123" for ::1 at 2020-03-08 13:55:58 -0700
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 123], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=123):
+  
+app/controllers/songs_controller.rb:12:in `show'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174655138400 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.0ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (62.3ms)
+Started GET "/songs/123" for ::1 at 2020-03-08 14:02:18 -0700
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 123], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=123):
+  
+app/controllers/songs_controller.rb:12:in `show'
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_melia__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___860928692016827333_70174621948640 at /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.1ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/melia/.rvm/gems/ruby-2.6.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.5ms)
+Started GET "/songs/123" for ::1 at 2020-03-08 14:06:29 -0700
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 123], ["LIMIT", 1]]
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-08 14:06:29 -0700
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 3]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 4]]
+  Rendered artists/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 38ms (Views: 32.1ms | ActiveRecord: 1.9ms)
+
+
